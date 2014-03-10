@@ -9,4 +9,26 @@ jQuery(document).ready(function($) {
             usePreloader:  true,
             sliderDrag:true,
         });  
-    });
+   
+
+
+
+/*certificate page lightbox*/
+    $("#cert").fancybox({
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
+
+
+
+
+
+
+
+
+
+
+     });

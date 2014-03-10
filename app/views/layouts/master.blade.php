@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<title>{{$pageTitle}}</title>
-	 <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>{{$pageTitle}}</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <meta name="author" content="Fahd Alkathiri">
     <meta name="description" content="{{$Description}}">
@@ -14,6 +14,8 @@
       {{HTML::style('/plugins/css/royalslider.css')}}
       {{HTML::style('/css/responsive.css')}}
       {{HTML::style('/css/style.css')}}
+      {{HTML::style('/css/fonts.css')}}
+      {{HTML::style('/css/jquery.fancybox.css')}}
 
     
 
@@ -27,6 +29,8 @@
       {{HTML::Script('/plugins/js/jquery.easing-1.3.js')}}
       {{HTML::Script('/js/bootstrap.js')}}
       {{HTML::Script('/plugins/js/jquery.royalslider.min.js')}}
+      {{HTML::Script('/plugins/js/jquery.fancybox.js')}}
+      {{HTML::Script('/plugins/js/jquery.fancybox.pack.js')}}
       
 
       {{HTML::Script('/js/custom.js')}}
@@ -43,10 +47,10 @@
    <!-- UP NAV  -->
  <div class="row" id="upnav">
  
- 	<ul class="upNav">
- 		<li><a href="#">خريطة الموقع</a>|</li>
- 		<li><a href="#">المركز الإعلامي</a></li>
- 	</ul>
+  <ul class="upNav">
+    <li><a href="خريطة-الموقع">خريطة الموقع</a>|</li>
+    <li><a href="المركز-الإعلامي">المركز الإعلامي</a></li>
+  </ul>
  </div> 
  <!-- /UP NAV  -->
 
@@ -55,40 +59,39 @@
  <div class="row" id="mainHeader">
  <div  class="col-md-9" id="navList">
   <ul id="menu">
-    <li><a href="#">الرئيسية</a></li>
     <li>
-        <a href="#">حكايتنا</a>
+        <a href="حكايتنا">حكايتنا</a>
         <ul>
-            <li><a href="#">مصانع إندومي</a></li>
-            <li><a href="#">شهادات الجودة</a></li>
+            <li><a href="مصانع-إندومي">مصانع إندومي</a></li>
+            <li><a href="شهادات-الجودة">شهادات الجودة</a></li>
         </ul>
     </li>
-    <li><a href="#">منتجاتنا</a></li>
+    <li><a href="منتجاتنا">منتجاتنا</a></li>
     <li><a href="#">إسمع منا</a>
  <ul>
-            <li><a href="#">مراحل التصنيع</a></li>
-            <li><a href="#">حقائق تهمك</a></li>
-            <li><a href="#">هل تعلم</a></li>
-            <li><a href="#">طلب زيارة</a></li>
+            <li><a href="مراحل-التصنيع">مراحل التصنيع</a></li>
+            <li><a href="حقائق-تهمك">حقائق تهمك</a></li>
+            <li><a href="هل-تعمل">هل تعلم</a></li>
+            <li><a href="طلب-زيارة-المصنع">طلب زيارة</a></li>
         </ul>
     </li>
-    <li><a href="#">صحتك</a>
+    <li><a href="صحتك">صحتك</a>
 <ul>
-            <li><a href="#">إسال طبيب</a></li>
-            <li><a href="#">مقالات التغذية</a></li>
-            <li><a href="#">مؤشر الصحة</a></li>
+            <li><a href="اسال-طبيب">إسال طبيب</a></li>
+            <li><a href="مقالات-التغذية">مقالات التغذية</a></li>
+            <li><a href="مؤشر-الصحة">مؤشر الصحة</a></li>
             
         </ul>
     </li>
-    <li><a href="#">الوسائط</a>
+    <li><a href="الوسائط">الوسائط</a>
 <ul>
-            <li><a href="#">معرض الصور</a></li>
-            <li><a href="#">معرض الفيديو</a></li>
-            <li><a href="#">العاب</a></li>
-            <li><a href="#">تطبيقات</a></li>
+            <li><a href="معرض-الصور">معرض الصور</a></li>
+            <li><a href="معرض-الصور">معرض الفيديو</a></li>
+            <li><a href="العاب">العاب</a></li>
+            <li><a href="تطبيقات">تطبيقات</a></li>
         </ul>
     </li>
-    <li><a href="#">إتصل بنا</a></li>
+    <li><a href="إتصل-بنا">إتصل بنا</a></li>
 </ul>
   <!-- SOCIAL BAR -->
  <div class="socialBar">
@@ -122,49 +125,24 @@
 <!--  slider -->
  <div class="row">
  <div  class="col-md-12">
-<div class="bannerHome">
-  <div class="royalSlider rsDefault">
-    <!-- image + animated block with text -->
-    <div class="rsContent">
-        <img class="rsImg" src="img/sliders/1.jpg" data-rsTmb="img/sliders/1.jpg" alt="image description" />
-    </div>
-
-     <div class="rsContent">
-        <img class="rsImg" src="img/sliders/1.jpg" data-rsTmb="img/sliders/1.jpg" alt="image description" />
-    </div>
-  
-</div>
+<div class="bannerinside">
+  {{ HTML::image("img/banner/banner1.jpg", "إندومي السعودية") }}
 
 </div>
 </div>
 </div>
 <!-- / slider -->
 
-<!-- CONTENT PAGE -->
+
+ @yield('content')
+
+
+
+
+
+
 
  <div class="row whitepage positioning">
-   <div  class="col-md-6 homehover">
-    <img src="img/recipes/1.jpg" alt="وصفات اندومس">
-    <p class="caption">
-      وصفة إندومي مع البهارات الحارةوصفة إندومي مع البهارات الحارة وصف 
-       إندومي مع البهارات الحارة .... <a href="#">المزيد</a>
-    </p>
-   </div>
-
-   <div  class="col-md-6">
-    <ul class="homeboxes">
-      <li class="ask-doc"><a href=""></a></li>
-      <li class="production-process"><a href=""></a></li>
-      <li class="facts"><a href=""></a></li>
-      <li class="indomie-quality-certificates"><a href=""></a></li>
-    </ul>
-   </div>
-</div>
-
-<!-- / CONTENT PAGE -->
-
-
-   <div class="row whitepage positioning homehover">
 
     <!-- Related -->
     <div  class="col-md-4 related">
@@ -192,14 +170,10 @@
     </div><!-- / Related -->
 
 
-<!-- Instagram -->
-<div class="row whitepage">
-    <div  class="col-md-12">
-      <div class="instagram-sticky">{{ HTML::image("img/instagram.png", "instagram-sticky") }}</div>
-<iframe src="http://www.intagme.com/in/?u=aW5kb21pZWtzYXxpbnwxMzN8OHwxfGZmZmZmZnx5ZXN8NXx1bmRlZmluZWQ=" class="ifinstagram"></iframe>   
+
 </div>
-</div><!-- /Instagram -->
-</div>
+
+
 
 
 <!-- FOOTER -->

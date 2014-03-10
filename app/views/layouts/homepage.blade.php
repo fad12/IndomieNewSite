@@ -40,13 +40,13 @@
 
  <!-- header-->
 
-   <!-- UP NAV  -->
+    <!-- UP NAV  -->
  <div class="row" id="upnav">
  
- 	<ul class="upNav">
- 		<li><a href="#">خريطة الموقع</a>|</li>
- 		<li><a href="#">المركز الإعلامي</a></li>
- 	</ul>
+  <ul class="upNav">
+    <li><a href="خريطة-الموقع">خريطة الموقع</a>|</li>
+    <li><a href="المركز-الإعلامي">المركز الإعلامي</a></li>
+  </ul>
  </div> 
  <!-- /UP NAV  -->
 
@@ -55,40 +55,40 @@
  <div class="row" id="mainHeader">
  <div  class="col-md-9" id="navList">
   <ul id="menu">
-    <li><a href="#">الرئيسية</a></li>
+    <li><a href="الرئيسية">الرئيسية</a></li>
     <li>
-        <a href="#">حكايتنا</a>
+        <a href="حكايتنا">حكايتنا</a>
         <ul>
-            <li><a href="#">مصانع إندومي</a></li>
-            <li><a href="#">شهادات الجودة</a></li>
+            <li><a href="مصانع-إندومي">مصانع إندومي</a></li>
+            <li><a href="شهادات-الجودة">شهادات الجودة</a></li>
         </ul>
     </li>
-    <li><a href="#">منتجاتنا</a></li>
-    <li><a href="#">إسمع منا</a>
+    <li><a href="منتجاتنا">منتجاتنا</a></li>
+    <li><a href="إسمع-منا">إسمع منا</a>
  <ul>
-            <li><a href="#">مراحل التصنيع</a></li>
-            <li><a href="#">حقائق تهمك</a></li>
-            <li><a href="#">هل تعلم</a></li>
-            <li><a href="#">طلب زيارة</a></li>
+            <li><a href="مراحل-التصنيع">مراحل التصنيع</a></li>
+            <li><a href="حقائق-تهمك">حقائق تهمك</a></li>
+            <li><a href="هل-تعمل">هل تعلم</a></li>
+            <li><a href="طلب-زيارة-المصنع">طلب زيارة</a></li>
         </ul>
     </li>
-    <li><a href="#">صحتك</a>
+    <li><a href="صحتك">صحتك</a>
 <ul>
-            <li><a href="#">إسال طبيب</a></li>
-            <li><a href="#">مقالات التغذية</a></li>
-            <li><a href="#">مؤشر الصحة</a></li>
+            <li><a href="اسال-طبيب">إسال طبيب</a></li>
+            <li><a href="مقالات-التغذية">مقالات التغذية</a></li>
+            <li><a href="مؤشر-الصحة">مؤشر الصحة</a></li>
             
         </ul>
     </li>
-    <li><a href="#">الوسائط</a>
+    <li><a href="الوسائط">الوسائط</a>
 <ul>
-            <li><a href="#">معرض الصور</a></li>
-            <li><a href="#">معرض الفيديو</a></li>
-            <li><a href="#">العاب</a></li>
-            <li><a href="#">تطبيقات</a></li>
+            <li><a href="معرض-الصور">معرض الصور</a></li>
+            <li><a href="معرض-الفيديو">معرض الفيديو</a></li>
+            <li><a href="العاب">العاب</a></li>
+            <li><a href="تطبيقات">تطبيقات</a></li>
         </ul>
     </li>
-    <li><a href="#">إتصل بنا</a></li>
+    <li><a href="إتصل-بنا">إتصل بنا</a></li>
 </ul>
   <!-- SOCIAL BAR -->
  <div class="socialBar">
@@ -108,7 +108,7 @@
  </div>
 <!-- /SOCIAL BAR -->
  </div>
- <div  class="col-md-3 logo"></div>
+ <a a href="الرئيسية" class="col-md-3 logo"></a>
 </div>
 <!-- /main Header nav and logo-->
 

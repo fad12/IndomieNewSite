@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'GE SS Two Medium';
+  src: url('GE_SS_Two_Medium.eot');
+  src: local('?'),
+    url('../font/GE_SS_Two_Medium.woff') format('woff'),
+    url('../font/GE_SS_Two_Medium.ttf') format('truetype'),
+    url('../font/GE_SS_Two_Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "Hacen Liner Screen";
+        src: url("../font/hacen_liner_screen.eot"); /* IE 9 */
+        src: url("../font/hacen_liner_screen.eot?") format("eot"), /* IE 6-8 */
+             url("../font/hacen_liner_screen.otf") format("opentype"), /* Other browsers */
+             url("../font/hacen_liner_screen.ttf") format("truetype"); /* Safari, Android, iOS */
+}
