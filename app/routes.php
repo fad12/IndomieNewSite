@@ -17,10 +17,10 @@ Route::resource('حكايتنا', 'HomeController@ourStory');//Our Story Page AR
 Route::resource('مصانع-إندومي', 'HomeController@factories');
 Route::resource('شهادات-الجودة', 'HomeController@certificate');
 Route::resource('إسمع-منا', 'HomeController@ourStory');
-Route::resource('مراحل-التصنيع', 'HomeController@ourStory');
-Route::resource('حقائق-تهمك', 'HomeController@ourStory');
-Route::resource('هل-تعمل', 'HomeController@qa');
-Route::resource('طلب-زيارة-المصنع', 'HomeController@ourStory');
+Route::resource('مراحل-التصنيع', 'HomeController@production_process');
+Route::resource('حقائق-تهمك', 'HomeController@facts');
+Route::resource('أسئلة-شائعة', 'HomeController@qa');
+Route::resource('طلب-زيارة-المصنع', 'HomeController@visit_request');
 Route::resource('صحتك', 'HomeController@ourStory');
 Route::resource('اسال-طبيب', 'HomeController@ourStory');
 Route::resource('مقالات-التغذية', 'HomeController@ourStory');
@@ -30,7 +30,14 @@ Route::resource('معرض-الصور', 'HomeController@ourStory');
 Route::resource('معرض-الفيديو', 'HomeController@ourStory');
 Route::resource('العاب', 'HomeController@ourStory');
 Route::resource('تطبيقات', 'HomeController@ourStory');
-Route::resource('إتصل-بنا', 'HomeController@ourStory');
+Route::resource('إتصل-بنا', 'HomeController@contactus');
 Route::resource('منتجاتنا', 'HomeController@ourStory');
 
 
+/*======================================================================*/
+
+                               /*visit request*/
+
+/*======================================================================*/
+
+Route::resource('visite_request_submit', 'HomeController@visite_request_submit');

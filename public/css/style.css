@@ -10,14 +10,14 @@
 ==== ============================================================*/
 
 
+
  body{
   background: url("../img/bg.png") ;
   margin: 0;
   padding: 0;
-  font-family: 'GE SS Two Medium';
 
 }
-*{font-family: 'GE SS Two Medium';
+
 }
  .indoContainer{
   margin-top: 20px;
@@ -196,19 +196,19 @@ ul li.sgs{
  width: 40px;
  height: 46px;
 }
-.homeboxes li:hover {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+/* .homeboxes li:hover {
+    filter: url(filters.svg#grayscale); Firefox 3.5+
+    filter: gray; IE6-9
+    -webkit-filter: grayscale(1); Google Chrome, Safari 6+ & Opera 15+
     transition: all .2s ease-in-out;
 }
 
 .homehover img:hover {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: url(filters.svg#grayscale); Firefox 3.5+
+    filter: gray; IE6-9
+    -webkit-filter: grayscale(1); Google Chrome, Safari 6+ & Opera 15+
     transition: all .2s ease-in-out;
-}
+} */
 /* SLIDER Container */
 
 .bannerHome{
@@ -221,7 +221,7 @@ ul li.sgs{
   background: #FFF;
   height: 240px;
   position: relative;
-  top: -65px;
+  top: -60px;
 }
 .inside h1{
 color: #3A8A5B;
@@ -231,7 +231,7 @@ color: #3A8A5B;
   line-height: 35px;
   color: #666464;
   font-weight: normal;
-  font-family: 'GE SS Two Medium';
+
   text-align: justify;
 }
 .quotes{
@@ -371,16 +371,15 @@ width: 70%;
 #menu li {
     float: right;
     list-style: none;
-    box-shadow: 1px 0 0 #444;
     position: relative;
 }
 
 #menu a {
     float: left;
          padding: 14px 0;
+         direction: rtl;
 text-align: right;
     color: #000;
-    font-family:'GE SS Two Medium';
     font-size: 20px;
     text-decoration: none;
     
@@ -525,4 +524,25 @@ color: #3A8A5B;
 .panel-body{
   font-size: 18px;
   font-family: sans-serif;
+}
+
+.media-heading{
+  color: #3A8A5B; 
+  font-size: 25px;
+  font-weight: bold;
+}
+.media{
+  border-bottom: dashed 1px  #919191; 
+   padding: 10px;
+}
+.media:hover{
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 0px 1px #000000;
+-moz-box-shadow: 0px 0px 1px #000000;
+box-shadow: 0px 0px 1px #000000;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+ border-bottom: none; 
+
 }

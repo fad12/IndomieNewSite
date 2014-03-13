@@ -55,7 +55,6 @@
  <div class="row" id="mainHeader">
  <div  class="col-md-9" id="navList">
   <ul id="menu">
-    <li><a href="الرئيسية">الرئيسية</a></li>
     <li>
         <a href="حكايتنا">حكايتنا</a>
         <ul>
@@ -68,7 +67,7 @@
  <ul>
             <li><a href="مراحل-التصنيع">مراحل التصنيع</a></li>
             <li><a href="حقائق-تهمك">حقائق تهمك</a></li>
-            <li><a href="هل-تعمل">هل تعلم</a></li>
+            <li><a href="أسئلة-شائعة">أسئلة شائعة</a></li>
             <li><a href="طلب-زيارة-المصنع">طلب زيارة</a></li>
         </ul>
     </li>
@@ -102,8 +101,8 @@
       <li class="blogger"><a href="#">blogger</a></li>
     </ul>
     <ul class="quality-certificate">
-      <li class="saso"><a href="#">شهادة الأيزو العالمية لسلامة الغذاء</a></li>
-      <li class="sgs"><a href="#">شهادة هيئة المواصفات الصعودية</a></li>
+      <li class="saso"><a href="شهادات-الجودة">شهادة الأيزو العالمية لسلامة الغذاء</a></li>
+      <li class="sgs"><a href="شهادات-الجودة">شهادة هيئة المواصفات الصعودية</a></li>
     </ul>
  </div>
 <!-- /SOCIAL BAR -->

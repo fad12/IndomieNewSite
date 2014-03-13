@@ -71,6 +71,91 @@ public function qa()
 		return View::make('ar.qa')->with($data);
 	}
 
+public function production_process()
+	{
+		
+        
+		return  Redirect::to('http://indomie.com.sa/pp2');;
+	}
+
+public function facts()
+	{
+		
+        $data = array(
+        "pageTitle"=>"إندومي السعودية | حكايتنا",
+        "keyWords"=> array("اندومي","إندومي"),
+        "Description"=>"-----------------------------"
+        );
+		return View::make('ar.facts')->with($data);
+	}
+
+public function visit_request()
+	{
+		
+        $data = array(
+        "pageTitle"=>"إندومي السعودية | حكايتنا",
+        "keyWords"=> array("اندومي","إندومي"),
+        "Description"=>"-----------------------------"
+        );
+		return View::make('ar.visit_request')->with($data);
+	}
+
+
+	public function contactus()
+	{
+		
+        $data = array(
+        "pageTitle"=>"إندومي السعودية | حكايتنا",
+        "keyWords"=> array("اندومي","إندومي"),
+        "Description"=>"-----------------------------"
+        );
+		return View::make('ar.contactus')->with($data);
+	}
+
+
+
+public function visite_request_submit(){
+		$input = Input::all();
+		
+   
+   $rules = array(
+        'title' => 'required',
+        'position' => 'required',
+        'email' => 'required',
+        'mobile' => 'required|Numeric|min:7',
+        'visit_date' => 'required',
+        'visit_date_2' => 'required',
+        'visit_type' => 'required',
+        'visitors_numper' => 'required',
+    
+);
+		$validator = Validator::make($input, $rules);
+
+    if ($validator->fails())
+    {
+        return Redirect::to('طلب-زيارة-المصنع')->withErrors($validator);
+    }else{
+
+    	DB::table('visit_request')->insert(
+    array(
+    	'title'           => Input::get('title'),
+    	'position'        => Input::get('position'),
+    	'email'           => Input::get('email'),
+    	'mobile'          => Input::get('mobile'),
+    	'visit_date'      => Input::get('visit_date'),
+    	'visit_date_2'    => Input::get('visit_date_2'),
+    	'visit_type'      => Input::get('visit_type'),
+    	'visitors_numper' => Input::get('visitors_numper'),
+    	'note'            => Input::get('note'),
+    	)
+);
+    return Redirect::to('طلب-زيارة-المصنع')->withInput()->with('success', 'تم إستلام طلبك و سيتم التواصل معكم في أقرب وقت ممكن');
+
+    }
+		
+       
+        
+	}
 
 
 

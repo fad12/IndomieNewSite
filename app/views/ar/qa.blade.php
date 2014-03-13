@@ -11,15 +11,15 @@
 
   <div class="col-md-3">
 <div class="quotes">
-  <p>بعد مرور ربع قرن من الزمان بات العنصر الرئيس في كل بيت بالمملكة</p>
+  <p>محتوى وجبة إندومي من الدهون والسعرات الحرارية لا يسبب السمنة </p>
 </div>
 
 <div class="quotes">
-  <p>عرف منتج “إندومي” بفوائده الكبيرة للجسم، فهو يتم تصنيعه من القمح الفاخر</p>
+  <p>تصنع إندومي من دقيق القمح القاسي السعودي الفاخر</p>
 </div>
   </div>
   <div class="col-md-9">
-<h1>هل تعلم</h1>
+<h1>أسئلة-شائعة</h1>
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -58,7 +58,6 @@
        	<li><a href="http://www.youtube.com/watch?v=ce7xO4yc8Ts">برنامج الثامنة (داوود الشريان) يناقش عن سلامة إندومي مع الدكتور بدر السليم 
 أستشاري امراض الجهاز الهضمي والكبد والمناظير للاطفال بمدينة الملك فهد الطبية</a></li>
        	<li><a href="http://www.ajinomoto.com/features/aji-no-moto/ar/truth/qa.html">حقيقة عن آجي نو موتو</a></li>
-       	<li><a href="http://ahram.org.eg/NewsQ/216025.aspx">جريدة الأهرام المصرية</a></li>
 
        </ul>
       </div>
